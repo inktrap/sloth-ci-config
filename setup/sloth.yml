@@ -1,0 +1,11 @@
+host: localhost
+
+port: 1234
+
+daemon: false
+
+log_dir: ~/sloth/logs
+
+api_auth:
+    login: admin
+    password: admin

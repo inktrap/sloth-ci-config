@@ -1,0 +1,28 @@
+listen_point: test/incoming
+
+# wtf? this is relative to what? the sloth.yml dir?
+# this means all the actions are relative to this dir
+work_dir: test
+
+provider:
+    dummy:
+        message: "name"
+
+extensions:
+    error_logs:
+        module: logs
+        path: ~/sloth/test
+        filename: test-errors.log
+        level: ERROR
+    debug_logs:
+        module: logs
+        path: ~/sloth/test
+        filename: test-debug.log
+        level: DEBUG
+
+actions:
+    - touch {foo}.txt
+    - echo $(date) > ~/somewhere-else
+
+params:
+    foo: bar
