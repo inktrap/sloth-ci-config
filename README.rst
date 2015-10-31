@@ -36,7 +36,7 @@ I don't really know which of them are bugs, because the documentation is a littl
             level: DEBUG
 
 *****************
-* ACTIONS
+ACTIONS
 *****************
 
 
@@ -51,25 +51,25 @@ Basically actions are shell-scripts that I can run as the user that runs sloth-c
 
 
 *****************
-* LOGGING
+LOGGING
 *****************
 
- - it appears that sloth-ci does not honor the logdir setting in sloth.yml. What should this setting express?
-    - One logdir for all apps?
-    - And an app only determines the log-filename?
+- it appears that sloth-ci does not honor the logdir setting in sloth.yml. What should this setting express?
+   - One logdir for all apps?
+   - And an app only determines the log-filename?
 
- - the ``access_log`` is more like a http-log, like apaches access_log, right?
+- the ``access_log`` is more like a http-log, like apaches access_log, right?
 
- - ``error_log`` is more like a backend log, there is a lot of stuff that went fine
+- ``error_log`` is more like a backend log, there is a lot of stuff that went fine
 
- - I do not get an error output/log if a dir is not there or the action was not successful
- - I do not get a confirmation that an action was successful (like, when logging is on debug-level)
+- I do not get an error output/log if a dir is not there or the action was not successful
+- I do not get a confirmation that an action was successful (like, when logging is on debug-level)
 
- - if I have test/incoming and it produces output, how do i create the default
-   view for test/ with the created results? sloth-ci checks if there is a listener
-   configured and if not 404s and as I see, there is no way to access the
-   output of actions via sloth.
+- if I have test/incoming and it produces output, how do i create the default
+  view for test/ with the created results? sloth-ci checks if there is a listener
+  configured and if not 404s and as I see, there is no way to access the
+  output of actions via sloth.
 
- - currently sloth is nice, but it is more like a post-recieve hook, not like
-   a ci-server that is capable of showing results.
+- currently sloth is nice, but it is more like a post-recieve hook, not like
+  a ci-server that is capable of showing results.
 
