@@ -24,6 +24,8 @@ I don't really know which of them are bugs, because the documentation is a littl
   - can I configure this? If so, where?
 - i did not install sloth-ci.ext.file_logs, but my app config was like this and sloth-ci did not complain.
 
+
+.. code::
     extensions:
         error_logs:
             module: logs
