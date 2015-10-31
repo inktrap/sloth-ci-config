@@ -13,6 +13,8 @@ This is my personal roadmap for sloth-ci
  BUGS?
 *****************
 
+Some of this stuff is fixed, see the
+.. _Changelog: https://bitbucket.org/moigagoo/sloth-ci/src/42406ee83e0a1fb3a49cfa3c0e732a271329ae6e/changelog.rst?at=default&fileviewer=file-view-default
 
 I don't really know which of them are bugs, because the documentation is a little bit sparse. I wrote this stuff down directly, so some points may sound a little bit harsh, but that should not be the case. Let's start with general questions:
 
