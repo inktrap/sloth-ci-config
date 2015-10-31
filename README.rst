@@ -13,6 +13,7 @@ This is my personal roadmap for sloth-ci
  BUGS?
 *****************
 
+
 I don't really know which of them are bugs, because the documentation is a little bit sparse. I wrote this stuff down directly, so some points may sound a little bit harsh, but that should not be the case. Let's start with general questions:
 
 - is it okay to use relative paths or paths like ``~/foo/bar``?
@@ -53,6 +54,7 @@ Basically actions are shell-scripts that I can run as the user that runs sloth-c
 *****************
 LOGGING
 *****************
+
 
 - it appears that sloth-ci does not honor the logdir setting in sloth.yml. What should this setting express?
    - One logdir for all apps?
