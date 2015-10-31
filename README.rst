@@ -38,6 +38,7 @@ I don't really know which of them are bugs, because the documentation is a littl
             filename: test-debug.log
             level: DEBUG
 
+
 *****************
 ACTIONS
 *****************
