@@ -13,9 +13,9 @@ This is my personal roadmap for sloth-ci
  BUGS?
 *****************
 
-I don't really know which of them are bugs, because the documentation is a little bit sparse. I wrote this stuff down directly, so some points may sound a little bit harsh, but that should not be the case. Let's start what 
+I don't really know which of them are bugs, because the documentation is a little bit sparse. I wrote this stuff down directly, so some points may sound a little bit harsh, but that should not be the case. Let's start with general questions:
 
-- general question: is it okay to use relative paths or paths like ``~/foo/bar``?
+- is it okay to use relative paths or paths like ``~/foo/bar``?
 - the work_dir in ``app.yml`` is confusing: this is relative to which dir?
   - the dir where sloth-ci is called,
   - where app.yml is
