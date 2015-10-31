@@ -1,27 +1,27 @@
 *****************
-* ROADMAP
+ ROADMAP
 *****************
 
 This is my personal roadmap for sloth-ci
 
- - DONE: run sloth behind nginx
- - DONE: testing via dummy-provider
- - TODO: gogs validator
- - TODO: python 3.2 compatibility
+- DONE: run sloth behind nginx
+- DONE: testing via dummy-provider
+- TODO: gogs validator
+- TODO: python 3.2 compatibility
 
 *****************
-* BUGS?
+ BUGS?
 *****************
 
 I don't really know which of them are bugs, because the documentation is a little bit sparse. I wrote this stuff down directly, so some points may sound a little bit harsh, but that should not be the case. Let's start what 
 
- - general question: is it okay to use relative paths or paths like ``~/foo/bar``?
- - the work_dir in ``app.yml`` is confusing: this is relative to which dir?
-   - the dir where sloth-ci is called,
-   - where app.yml is
-   - or where sloth.yml is?
-   - can I configure this? If so, where?
- - i did not install sloth-ci.ext.file_logs, but my app config was like this and sloth-ci did not complain.
+- general question: is it okay to use relative paths or paths like ``~/foo/bar``?
+- the work_dir in ``app.yml`` is confusing: this is relative to which dir?
+  - the dir where sloth-ci is called,
+  - where app.yml is
+  - or where sloth.yml is?
+  - can I configure this? If so, where?
+- i did not install sloth-ci.ext.file_logs, but my app config was like this and sloth-ci did not complain.
 
     extensions:
         error_logs:
@@ -40,12 +40,12 @@ I don't really know which of them are bugs, because the documentation is a littl
 *****************
 
 
- - all actions are happening relative to the work_dir! This is not documented, right?
- - all actions are executed via subprocess.
-    - That should be documented somewhere
-    - Also, this is highly insecure, I could overwrite everything where I have permission to write.
-    - This is not bound to the output directory at all!
-    - Also: shell=true is highly insecure!
+- all actions are happening relative to the work_dir! This is not documented, right?
+- all actions are executed via subprocess.
+   - That should be documented somewhere
+   - Also, this is highly insecure, I could overwrite everything where I have permission to write.
+   - This is not bound to the output directory at all!
+   - Also: shell=true is highly insecure!
 
 Basically actions are shell-scripts that I can run as the user that runs sloth-ci.
 
