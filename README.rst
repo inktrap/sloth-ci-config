@@ -18,10 +18,10 @@ I don't really know which of them are bugs, because the documentation is a littl
 
 - is it okay to use relative paths or paths like ``~/foo/bar``?
 - the work_dir in ``app.yml`` is confusing: this is relative to which dir?
-  - the dir where sloth-ci is called,
-  - where app.yml is
-  - or where sloth.yml is?
-  - can I configure this? If so, where?
+    - the dir where sloth-ci is called,
+    - where app.yml is
+    - or where sloth.yml is?
+    - can I configure this? If so, where?
 - i did not install sloth-ci.ext.file_logs, but my app config was like this and sloth-ci did not complain.
 
 
@@ -46,12 +46,11 @@ ACTIONS
 
 - all actions are happening relative to the work_dir! This is not documented, right?
 - all actions are executed via subprocess.
-   - That should be documented somewhere
-   - Also, this is highly insecure, I could overwrite everything where I have permission to write.
-   - This is not bound to the output directory at all!
-   - Also: shell=true is highly insecure!
-
-Basically actions are shell-scripts that I can run as the user that runs sloth-ci.
+    - That should be documented somewhere
+    - Also, this is highly insecure, I could overwrite everything where I have permission to write.
+    - This is not bound to the output directory at all!
+    - Also: shell=true is highly insecure!
+- Basically actions are shell-scripts that I can run as the user that runs sloth-ci.
 
 
 *****************
@@ -60,11 +59,10 @@ LOGGING
 
 
 - it appears that sloth-ci does not honor the logdir setting in sloth.yml. What should this setting express?
-   - One logdir for all apps?
-   - And an app only determines the log-filename?
+    - One logdir for all apps?
+    - And an app only determines the log-filename?
 
 - the ``access_log`` is more like a http-log, like apaches access_log, right?
-
 - ``error_log`` is more like a backend log, there is a lot of stuff that went fine
 
 - I do not get an error output/log if a dir is not there or the action was not successful
